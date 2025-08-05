@@ -1,0 +1,26 @@
+import { IconHexagonLetterA } from '@tabler/icons-react';
+import SideBar from "./SideBar.tsx";
+
+const links = ["About","Projects","Experience","Skills","Contact"];
+const navLinks = (col:Boolean)=> {
+    return links.map((link, index) => {
+        return <a className={`${col?'flex flex-col items-center' :''} text-textColor text-lg vt323-regular hover:text-primaryColor`} href={`#${link}`} > 
+            <span className="text-primaryColor">0{index+1}. </span>
+        {link}</a>
+    })
+}
+
+const Header=()=> {
+    return (
+        <nav className="flex justify-between bg-bgColor h-[17vh] px-10 dm-mono-regular items-center">
+            <IconHexagonLetterA className="z-10" size={60} color="#64FFDA" stroke={1.25}/>
+            <div className="md:flex gap-8 hidden">
+                {navLinks(false)}
+            </div>
+            <SideBar/>
+        </nav>
+    );
+}
+
+export default Header;
+export {navLinks};
