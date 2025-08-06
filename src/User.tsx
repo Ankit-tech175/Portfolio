@@ -14,7 +14,7 @@ const ProjectInfo = [
         image: "project1.png",
         live: true,
         github: "https://github.com/Ankit-tech175/portfolio",
-        link: "https://github.com/Ankit-tech175/portfolio",
+        link: "https://ankit-tech175.github.io/Portfolio/",
         techStack: ["React", "TypeScript", "Tailwind CSS", "Vanta.js"],
         type: "Web",
         status: "Completed",
